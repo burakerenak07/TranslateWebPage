@@ -54,7 +54,7 @@ def translator():
             for k,v in mydict.items():
    
                 #Detection and removal of the none parts of the dictionary structure from the dictionary
-                if v is None:
+                if v or k is None:
                     del[mydict[k]]
 
                 # It is the part where the translated sentence parts in the file are written to the file.
