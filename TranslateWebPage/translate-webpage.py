@@ -11,7 +11,7 @@ def translator():
     #The part that lists the html and htm files.
     path="C:/Users/burak/Desktop/c1"
     htmlfiles = [os.path.join(root, name)
-                for root, files in os.walk(path)
+                for root,dirr, files in os.walk(path)
                 for name in files
                 if name.endswith((".html", ".htm"))]
     
